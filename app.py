@@ -59,4 +59,4 @@ if submitted:
     result = predict(input_data)
     
     # Menampilkan hasil prediksi
-    st.success(f'Persentase lemak tubuh yang diprediksi adalah {result:.2f} persen dari berat tubuhmu')
+    st.success(f'Persentase lemak tubuh yang diprediksi adalah {result:.2f} persen')
