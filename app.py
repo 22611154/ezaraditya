@@ -8,6 +8,8 @@ model = joblib.load('model.pkl')
 # Definisikan fungsi untuk prediksi
 def predict(input_data):
     df = pd.DataFrame(input_data, index=[0])
+    st.write("Input Data for Prediction:")
+    st.write(df)
     prediction = model.predict(df)
     return prediction[0]
 
