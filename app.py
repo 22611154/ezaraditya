@@ -14,7 +14,7 @@ def predict(input_data):
     return prediction[0]
 
 # Membuat aplikasi Streamlit
-st.title('Aplikasi Prediksi Persentase Lemak Tubuh')
+st.title('Prediksi Persentase Lemak Tubuh')
 
 # Membuat form input
 with st.form("form_prediksi"):
