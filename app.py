@@ -16,6 +16,7 @@ st.title('Body Fat Prediction App')
 
 # Membuat form input
 with st.form("prediction_form"):
+    density = st.number_input('Density', min_value=0.0, max_value=2.0, value=1.05)
     age = st.number_input('Age', min_value=0, max_value=100, value=25)
     weight = st.number_input('Weight (in pounds)', min_value=0.0, max_value=500.0, value=150.0)
     height = st.number_input('Height (in inches)', min_value=0.0, max_value=100.0, value=65.0)
@@ -36,6 +37,7 @@ with st.form("prediction_form"):
 if submitted:
     # Menyusun data input untuk prediksi
     input_data = {
+        'Density': density,
         'Age': age,
         'Weight': weight,
         'Height': height,
